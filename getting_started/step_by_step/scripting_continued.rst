@@ -140,6 +140,17 @@ calling
     
     var enemies = GetTree().GetNodesInGroup("enemies");
 
+You can also remove a node from a group by calling :ref:`Node.remove_from_group() <class_Node_remove_from_group>`:
+
+.. tabs::
+ .. code-tab:: gdscript GDScript
+
+    self.remove_from_group("enemies")
+
+ .. code-tab:: csharp
+    
+    this.RemoveFromGroup("enemies");
+
 The :ref:`SceneTree <class_SceneTree>` class provides many useful methods,
 like interacting with scenes, their node hierarchy and groups of nodes.
 It allows you to easily switch scenes or reload them,
